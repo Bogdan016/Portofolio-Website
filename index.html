@@ -55,7 +55,7 @@
 
                 <div class="nav__btns">
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+                        <i class="uil uil-bars"></i>
                     </div>
                 </div>
             </nav>
@@ -89,9 +89,9 @@
                                 delving into the world of programming and web development. 
                             </p>
                             <!-- Vezi daca tii butonul asta, poate ar merge de mail -->
-                            <a href="#contact" class="button button--flex">
+                            <!-- <a href="#contact" class="button button--flex">
                                 <i class="uil uil-envelope button__icon"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
@@ -257,12 +257,12 @@
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
-                        <div class="qualification__button button--flex">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
                         </div>
 
-                        <div class="qualification__button button--flex">
+                        <div class="qualification__button button--flex"  data-target="#work">
                             <i class="uil uil-bag qualification__icon"></i></i>
                             Work
                         </div>
@@ -272,11 +272,11 @@
 
                         <!-- Qualification Content 1 -->
 
-                        <div class="qualification__content">
+                        <div class="qualification__content qualification__active" data-content id="education">
 
                             <!-- Qualification 1 -->
                             <div class="qualification__data">
-                                <div></div>
+                                
                                 <div>
                                     <h3 class="qualification__title">Mathematics and Informatics</h3>
                                     <span class="qualification__subtitle">Decebal National College</span>
@@ -295,6 +295,14 @@
                             <!-- Qualification 2 -->
                             <div class="qualification__data">
                                 <div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                
+                                <div>
                                     <h3 class="qualification__title">Bachelor's Computer Science</h3>
                                     <span class="qualification__subtitle">Technical University of Cluj-Napoca</span>
                                     <div class="qualification__calendar">
@@ -302,10 +310,7 @@
                                         2022 - 2026
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
+
                             </div>
 
                             <!-- Qualification 3 -->
@@ -320,18 +325,18 @@
                                 </div>
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
+                                    <!-- <span class="qualification__line"></span> -->
                                 </div>
                             </div>
                         </div>
 
                         <!-- Qualification Content 2 -->
 
-                        <div class="qualification__content">
+                        <div class="qualification__content " data-content id="work">
 
                             <!-- Qualification 1 -->
                             <div class="qualification__data">
-                                <div></div>
+                                
                                 <div>
                                     <h3 class="qualification__title">Internship</h3>
                                     <span class="qualification__subtitle">Google</span>
@@ -349,6 +354,11 @@
 
                             <!-- Qualification 2 -->
                             <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
                                 <div>
                                     <h3 class="qualification__title">Software engineer</h3>
                                     <span class="qualification__subtitle">Netflix</span>
@@ -357,10 +367,7 @@
                                         2024 - 2026
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
+
                             </div>
 
                             <!-- Qualification 3 -->
@@ -375,7 +382,7 @@
                                 </div>
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
+                                    <!-- <span class="qualification__line"></span> -->
                                 </div>
                             </div>
                         </div>
@@ -383,14 +390,57 @@
                 </div>
             </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portofolio__container container">
+                    <div>
+                        <!--==================== Project 1 ====================-->
+                        <div class="portofolio__content grid">
+                            <img src="assets/images/MyMDB.png" alt="" class="portofolio__img">
+
+                            <div class="portofolio__data">
+                                <h3 class="portofolio__title">MyMDB Website</h3>
+                                <p class="portofolio__description">This project was a part of a university assignment about movie databases. 
+                                    I found the idea interesting and decided to expand on it, with IMDB as a source of inspiration.</p>
+                                <a href="#" class="button button--flex button--small portofolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== Project 2 ====================-->
+                        <div class="portofolio__content grid">
+                            <img src="assets/images/MyMDB.png" alt="" class="portofolio__img">
+
+                            <div class="portofolio__data">
+                                <h3 class="portofolio__title">MyMDB Website</h3>
+                                <p class="portofolio__description">This project was a part of a university assignment about movie databases. 
+                                    I found the idea interesting and decided to expand on it, with IMDB as a source of inspiration.</p>
+                                <a href="#" class="button button--flex button--small portofolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== Project 3 ====================-->
+                        <div class="portofolio__content grid">
+                            <img src="assets/images/MyMDB.png" alt="" class="portofolio__img">
+
+                            <div class="portofolio__data">
+                                <h3 class="portofolio__title">MyMDB Website</h3>
+                                <p class="portofolio__description">This project was a part of a university assignment about movie databases. 
+                                    I found the idea interesting and decided to expand on it, with IMDB as a source of inspiration.</p>
+                                <a href="#" class="button button--flex button--small portofolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
