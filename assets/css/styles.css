@@ -564,7 +564,37 @@ background-color: var(--first-color-lighter);
 
 /*==================== PORTFOLIO ====================*/
 
+/*vezi ca la mine portofolio e projects (id)*/
+.portofolio__container{
+  overflow: initial;
+}
 
+.portofolio__content{
+  padding: 0 1.5rem;
+}
+
+.portofolio__img{
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center; 
+}
+
+.portofolio__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portofolio__description{
+  margin-bottom: var(--mb-0-75);
+}
+.portofolio__button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
 /*==================== PROJECT IN MIND ====================*/
 
 
