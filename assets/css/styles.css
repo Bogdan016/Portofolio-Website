@@ -70,11 +70,32 @@
 }
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme{
 
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color),29%,16%);
+}
 
 /*========== Button Dark/Light ==========*/
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
 
+.center-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
 
+.change-theme:hover{
+  color: var(--first-color);
+}
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -243,10 +264,14 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /* Change background header */
-
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
 
 /*==================== HOME ====================*/
 .home__container{
@@ -556,11 +581,6 @@ background-color: var(--first-color-lighter);
 .qualification__button.qualification__active{
   color: var(--first-color);
 }
-/*==================== SERVICES ====================*/
-
-
-/* Active Modal */
-
 
 /*==================== PORTFOLIO ====================*/
 
@@ -595,16 +615,140 @@ background-color: var(--first-color-lighter);
 .swiper-button-next::after{
   content: '';
 }
-/*==================== PROJECT IN MIND ====================*/
 
+.swiper-portofolio-icon{
+  font-size: 2em;
+  color: var(--first-color);
+}
 
-/*==================== TESTIMONIAL ====================*/
+.swiper-button-prev{
+  left: -.5rem;
+  top: 6rem;
+}
 
+.swiper-button-next{
+  right: -.5rem;
+  top: 6rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullets-active{
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-nex,
+.swiper-pagination-bullets{
+  outline: none;
+}
 
 /*==================== CONTACT ME ====================*/
+.contact__container{
+  row-gap: 2.5rem;
+}
 
+.contact__information{
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact__icon{
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact_title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+
+.contact__content{
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__label{
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact__input{
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
 
 /*==================== FOOTER ====================*/
+.footer{
+  padding-top: 2rem;
+}
+
+.foter__container{
+  row-gap: 3.5rem;
+}
+
+.footer__bg{
+  background-color: var(--first-color);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle{
+  font-size: var(--small-font-size);
+}
+
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__social{
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+  color: var(--first-color);
+}
+
+.footer__copy{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+  color: #fff;
+}
 
 
 /*========== SCROLL UP ==========*/
