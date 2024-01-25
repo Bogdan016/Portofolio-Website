@@ -5,10 +5,12 @@ const navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', ()=>{
-        navMenu.classList.add('show-menu')
-    })
+if (navToggle) {
+    navToggle.addEventListener('click', toggleNavMenu);
+}
+
+function toggleNavMenu() {
+    navMenu.classList.add('show-menu');
 }
 
 /*===== MENU HIDDEN =====*/
@@ -70,7 +72,7 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active')
     })
 })
-/*==================== SERVICES MODAL ====================*/
+
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/

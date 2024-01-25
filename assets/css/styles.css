@@ -1,15 +1,13 @@
-/*==================== GOOGLE FONTS ====================*/
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 
-/*==================== VARIABLES CSS ====================*/
+                                            /* CSS variables */
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 205; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /* Colors */
+    --hue-color: 205;
 
-    /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -23,7 +21,6 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== Font and typography ==========*/
     --body-font: 'Fira Code', monospace;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -35,11 +32,10 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -50,10 +46,7 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
-    --z-tooltip: 10;
     --z-fixed: 100;
-    --z-modal: 1000;
 }
 
 /* Font size for large devices */
@@ -69,7 +62,7 @@
     }
 }
 
-/*========== Variables Dark theme ==========*/
+                                            /* Variables Dark theme */
 body.dark-theme{
 
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -80,7 +73,7 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color),29%,16%);
 }
 
-/*========== Button Dark/Light ==========*/
+                                            /* Button Dark/Light */
 .nav__btns{
   display: flex;
   align-items: center;
@@ -96,7 +89,8 @@ body.dark-theme{
 .change-theme:hover{
   color: var(--first-color);
 }
-/*==================== BASE ====================*/
+
+                                            /* Base */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -133,7 +127,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+                                            /* Reusable CSS classes */
 .section {
   padding: 2rem 0 4rem;
 }
@@ -154,7 +148,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+                                            /* Layout */
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
@@ -175,7 +169,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+                                            /* Nav */
 .nav{
   max-width: 968px;
   height: var(--header-height);
@@ -257,23 +251,23 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
+                                            /* show menu */
 .show-menu{
   bottom: 0;
 
 }
 
-/* Active link */
+                                            /* Active link */
 .active-link{
   color: var(--first-color);
 }
 
-/* Change background header */
+                                            /* Change background header */
 .scroll-header{
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
-/*==================== HOME ====================*/
+                                            /* Home */
 .home__container{
   gap: 1rem;  
 }
@@ -333,7 +327,7 @@ img {
 }
 
 
-/*==================== BUTTONS ====================*/
+                                            /* Buttons */
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -358,8 +352,7 @@ img {
   align-items: center;
 }
 
-/*==================== ABOUT ====================*/
-
+                                            /* About */
 .about__img{
   width: 200px;
   border-radius: .5rem;
@@ -404,8 +397,7 @@ img {
   justify-content: center;
 }
 
-
-/*==================== SKILLS ====================*/
+/* Skills */
 
 .skills__container{
   row-gap: 0;
@@ -517,10 +509,7 @@ background-color: var(--first-color-lighter);
   transform: rotate(-180deg);
 }
 
-
-/*==================== QUALIFICATION ====================*/
-
-
+/* Qualification */
 
 .qualification__tabs{
   display: flex;
@@ -594,9 +583,8 @@ background-color: var(--first-color-lighter);
   color: var(--first-color);
 }
 
-/*==================== PORTFOLIO ====================*/
+/* Portofolio */
 
-/*vezi ca la mine portofolio e projects (id)*/
 .portofolio__container{
   overflow: initial;
   max-width: 1200px; 
@@ -668,7 +656,7 @@ background-color: var(--first-color-lighter);
   outline: none;
 }
 
-/*==================== CONTACT ME ====================*/
+/* Contact */
 .contact__container{
   row-gap: 2.5rem;
 }
@@ -715,11 +703,12 @@ background-color: var(--first-color-lighter);
   border: none;
   outline: none;
   padding: .25rem .5rem .5rem 0;
+  
 }
 
-/*==================== FOOTER ====================*/
+/* Footer */
 .footer{
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .foter__container{
@@ -762,8 +751,8 @@ background-color: var(--first-color-lighter);
 .footer__copy{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
-  margin-top: var(--mb-3);
+  color: var(--text-color);
+  margin-top: var(--mb-0-5);
 }
 
 .footer__title,
@@ -774,7 +763,7 @@ background-color: var(--first-color-lighter);
 }
 
 
-/*==================== MEDIA QUERIES ====================*/
+/* Media Queries */
 /* For small devices */
 @media screen and (max-width: 350px){
   .container{
