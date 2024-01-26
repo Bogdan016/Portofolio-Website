@@ -1,7 +1,7 @@
-/* Google Fonts */
+/* ----------------------------------------------------------Google Fonts----------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 
-                                            /* CSS variables */
+/* ----------------------------------------------------------CSS variables---------------------------------------------------------- */
 :root {
     --header-height: 3rem;
 
@@ -62,7 +62,7 @@
     }
 }
 
-                                            /* Variables Dark theme */
+/* --------------------------------------------------------Variables Dark theme------------------------------------------------------ */
 body.dark-theme{
 
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -73,7 +73,7 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color),29%,16%);
 }
 
-                                            /* Button Dark/Light */
+/* ---------------------------------------------------------Button Dark/Light-------------------------------------------------------- */
 .nav__btns{
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ body.dark-theme{
   color: var(--first-color);
 }
 
-                                            /* Base */
+/* ----------------------------------------------------------------Base-------------------------------------------------------------- */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -127,7 +127,7 @@ img {
   height: auto;
 }
 
-                                            /* Reusable CSS classes */
+/* -------------------------------------------------------Reusable CSS classes-------------------------------------------------------- */
 .section {
   padding: 2rem 0 4rem;
 }
@@ -148,7 +148,7 @@ img {
   text-align: center;
 }
 
-                                            /* Layout */
+/* --------------------------------------------------------------Layout-------------------------------------------------------------- */
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
@@ -169,7 +169,7 @@ img {
   background-color: var(--body-color);
 }
 
-                                            /* Nav */
+/* ----------------------------------------------------------------Nav--------------------------------------------------------------- */
 .nav{
   max-width: 968px;
   height: var(--header-height);
@@ -220,7 +220,6 @@ img {
   gap: 2rem;
 }
 
-
 .nav__link{
   display: flex;
   flex-direction: column;
@@ -251,23 +250,22 @@ img {
   color: var(--first-color-alt);
 }
 
-                                            /* show menu */
+/* ------------------------------------------------------------Show menu------------------------------------------------------------ */
 .show-menu{
   bottom: 0;
-
 }
 
-                                            /* Active link */
+/* -----------------------------------------------------------Active link----------------------------------------------------------- */
 .active-link{
   color: var(--first-color);
 }
 
-                                            /* Change background header */
+/* -----------------------------------------------------Change background header---------------------------------------------------- */
 .scroll-header{
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
-                                            /* Home */
+/* ---------------------------------------------------------------Home-------------------------------------------------------------- */
 .home__container{
   gap: 1rem;  
 }
@@ -326,8 +324,7 @@ img {
   display: none;
 }
 
-
-                                            /* Buttons */
+/* --------------------------------------------------------------Buttons-------------------------------------------------------------- */
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -352,7 +349,7 @@ img {
   align-items: center;
 }
 
-                                            /* About */
+/* ----------------------------------------------------------------About-------------------------------------------------------------- */
 .about__img{
   width: 200px;
   border-radius: .5rem;
@@ -397,7 +394,7 @@ img {
   justify-content: center;
 }
 
-/* Skills */
+/* ----------------------------------------------------------------Skills------------------------------------------------------------- */
 
 .skills__container{
   row-gap: 0;
@@ -509,7 +506,7 @@ background-color: var(--first-color-lighter);
   transform: rotate(-180deg);
 }
 
-/* Qualification */
+/* -------------------------------------------------------------Qualification------------------------------------------------------------- */
 
 .qualification__tabs{
   display: flex;
@@ -583,7 +580,7 @@ background-color: var(--first-color-lighter);
   color: var(--first-color);
 }
 
-/* Portofolio */
+/* ----------------------------------------------------------------Portofolio---------------------------------------------------------------- */
 
 .portofolio__container{
   overflow: initial;
@@ -595,7 +592,7 @@ background-color: var(--first-color-lighter);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center;  
 }
 .portofolio__img{
   width: 700px;
@@ -659,6 +656,7 @@ background-color: var(--first-color-lighter);
 /* Contact */
 .contact__container{
   row-gap: 2.5rem;
+  
 }
 
 .contact__information{
@@ -670,6 +668,11 @@ background-color: var(--first-color-lighter);
   font-size: 2rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
+}
+
+.contact__button{
+  align-items: center;
+  text-align: center;
 }
 
 .contact_title{
@@ -706,7 +709,7 @@ background-color: var(--first-color-lighter);
   
 }
 
-/* Footer */
+/* ---------------------------------------------------------------Footer---------------------------------------------------------- */
 .footer{
   padding-top: 1rem;
 }

@@ -149,3 +149,25 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('contact__button');
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var body = 'name: ' + name + '<br/> email: ' + email + '<br/> message: ' + message;
+
+        Email.send({
+            SecureToken: "ec0bcdf5-7d84-4556-b163-06075c155a95",
+            To: 'bogdanistrate03@gmail.com',
+            From: "bogdanistrate032@gmail.com",
+            Subject: "Contact message",
+            Body: body
+        }).then(
+            message => alert(message)
+        );
+    });
+});
