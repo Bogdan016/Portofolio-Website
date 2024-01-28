@@ -418,7 +418,6 @@ img {
 
 }
 
-
 .skills__title{
   font-size: var(--h3-font-size);
 }
@@ -595,7 +594,7 @@ background-color: var(--first-color-lighter);
   text-align: center;  
 }
 .portofolio__img{
-  width: 700px;
+  width: 70%;
   border-radius: .5rem;
   justify-self: center; 
 }
@@ -613,10 +612,6 @@ background-color: var(--first-color-lighter);
 
 .portofolio__button {
   margin-top: 1rem; 
-}
-
-.portofolio__button:hover .button__icon{
-  transform: translateX(.25rem);
 }
 
 .swiper-button-prev::after,
@@ -907,7 +902,7 @@ background-color: var(--first-color-lighter);
     text-align: initial;
   }
   .about__info{
-    justify-content: space-between;
+    justify-content:baseline;
   }
 
   .about__buttons{
