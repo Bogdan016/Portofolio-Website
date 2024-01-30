@@ -20,7 +20,6 @@ Explore my portfolio to learn more about my skills, projects, and experience.
 
 ### Mobile View 
 ![Mobile View](assets/WebsiteIphone14.png)
-*IPhone 14 Pro Max*
 
 ### Desktop View
 ![Desktop View](assets/WebsiteDesktopFull1.png)
