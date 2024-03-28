@@ -19,9 +19,11 @@ Explore my portfolio to learn more about my skills, projects, and experience.
 ## Examples
 
 ### Mobile View 
-![Mobile View](assets/WebsiteIphone14.png)
+<img src="assets/WebsiteIphone14.png" alt="Mobile View" width="350"/>
+
 
 ### Desktop View
-![Desktop View](assets/WebsiteDesktopFull1.png)
+<img src="assets/WebsiteDesktopFull1.png" alt="Desktop View" width="800"/>
+
 
 
